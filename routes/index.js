@@ -1,6 +1,6 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-const mariadb = require("mariadb")
+const mariadb = require("mariadb");
 
 //mariadb 연결
 let pool = mariadb.createPool({
@@ -8,7 +8,7 @@ let pool = mariadb.createPool({
   database: "test",
   port: "3309",
   user: "root",
-  password: "cheerup1004"
+  password: "cheerup1004",
 });
 
 //sql 실행 함수
@@ -39,17 +39,17 @@ function executeQuery(query) {
 }
 
 /* GET home page. */
-router.get('/', async function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get("/", async function (req, res, next) {
+  res.render("index", { title: "Express" });
 });
 
 // send = 값만 보내는 거, rnder = page를 보내는 거
-router.get('/hello_world', function(req, res, next) {
-  res.render('hello_world', {
-    title: 'Express',
-    name: '이혁기',
-    age: '24'
-   });
+router.get("/hello_world", function (req, res, next) {
+  res.render("hello_world", {
+    title: "Express",
+    name: "이혁기",
+    age: "24",
+  });
 });
 
 module.exports = router;
