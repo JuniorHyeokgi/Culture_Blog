@@ -43,7 +43,7 @@ router.get("/", async function (req, res, next) {
   res.render("index", { title: "Express" });
 });
 
-// send = 값만 보내는 거, rnder = page를 보내는 거
+// send = 값만 보내는 거, render = page를 보내는 거
 router.get("/hello_world", function (req, res, next) {
   res.render("hello_world", {
     title: "Express",
