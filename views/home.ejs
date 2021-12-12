@@ -28,17 +28,36 @@
     ></script>
   </head>
   <body>
-    <div class="card" style="width: 18rem">
-      <img class="card-img-top" src="/images/ocean.jpg" alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">Card Title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a id="my-button" href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
+    <div class="container">
+      <div class="header">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="musical">Musical</a>
+          </li>
+        </ul>
+        <hr />
+        <div class="profile">
+          <img
+            src="/images/profile.jpg"
+            alt="profile"
+            class="rounded-circle"
+            id="profile"
+          />
+          <p id="profile-text">
+            Welcome My Blog<br />
+            Record books and musicals
+          </p>
+        </div>
+        <div class="slides"></div>
     </div>
-    <script src="/javascripts/my.js"></script>
+
+    <!-- Javascript -->
+    <script src="/javascripts/home.js"></script>
   </body>
 </html>

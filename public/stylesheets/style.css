@@ -4,5 +4,41 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+div.profile {
+  margin-top: 40px;
+}
+#profile {
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#profile-text {
+  margin: 40px 20% 0px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 767px) {
+  .masonry-item {
+    display: inline-block;
+    margin: 2%;
+    width: 28%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .masonry-item {
+    display: inline-block;
+    margin: 2%;
+    width: 20%;
+  }
+}
+.masonry-item img {
+  width: 100%;
+  border-radius: 10px;
+  vertical-align: top;
 }
